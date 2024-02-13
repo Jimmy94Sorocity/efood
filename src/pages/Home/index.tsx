@@ -1,4 +1,3 @@
-import Banner from '../../components/Banner'
 import ProductsList from '../../components/ProductsList'
 import Games from '../../models/Game'
 
@@ -95,7 +94,6 @@ const emBreve: Games[] = [
 
 const Home = () => (
   <>
-    <Banner />
     <ProductsList games={promocoes} title="Promoções" background="gray" />
     <ProductsList games={emBreve} title="Em breve" background="black" />
   </>

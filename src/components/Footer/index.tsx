@@ -1,52 +1,38 @@
-import { Container, SectionTitle, FooterSection, Links, Link } from './styles'
+import {
+  Container,
+  FooterLogo,
+  FooterSection,
+  Links,
+  Link,
+  Copyright
+} from './styles'
 
-const currentYear = new Date().getFullYear()
+import logo from '../../assets/images/efood_logo.png'
+import instagram from '../../assets/images/instagram.png'
+import facebook from '../../assets/images/facebook.png'
+import twitter from '../../assets/images/twitter.png'
 
 const Footer = () => (
   <Container>
-    <div className="container">
-      <FooterSection>
-        <SectionTitle>Categorias</SectionTitle>
-        <Links>
-          <li>
-            <Link>RPG</Link>
-          </li>
-          <li>
-            <Link>Ação</Link>
-          </li>
-          <li>
-            <Link>Aventura</Link>
-          </li>
-          <li>
-            <Link>Esportes</Link>
-          </li>
-          <li>
-            <Link>Simulação</Link>
-          </li>
-          <li>
-            <Link>Estrátegia</Link>
-          </li>
-          <li>
-            <Link>FPS</Link>
-          </li>
-        </Links>
-      </FooterSection>
-      <FooterSection>
-        <SectionTitle>Acesso Rápido</SectionTitle>
-        <Links>
-          <li>
-            <Link>Novidades</Link>
-          </li>
-          <li>
-            <Link>Promoções</Link>
-          </li>
-          <li>
-            <Link>Em breve</Link>
-          </li>
-        </Links>
-      </FooterSection>
-      <p>{currentYear} - &copy; E-PLAY Todos os direitos reservados</p>
-    </div>
+    <FooterLogo src={logo} alt="EFOOD" />
+    <Links>
+      <li>
+        <Link src={instagram} alt="Logo Instagram" />
+      </li>
+      <li>
+        <Link src={facebook} alt="Logo Facebook" />
+      </li>
+      <li>
+        <Link src={twitter} alt="Logo Twitter" />
+      </li>
+    </Links>
+    <FooterSection>
+      <Copyright>
+        A efood é uma plataforma para divulgação de estabelecimentos, a
+        responsabilidade pela entrega, qualidade dos produtos é toda do
+        estabelecimento contratado.{' '}
+      </Copyright>
+    </FooterSection>
   </Container>
 )
 

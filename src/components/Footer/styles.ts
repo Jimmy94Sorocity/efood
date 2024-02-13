@@ -3,27 +3,32 @@ import { cores } from '../../styles'
 
 export const Container = styled.footer`
   background-color: ${cores.cinza};
-  padding: 32px 0;
-  font-size: 14px;
+  height: 304px;
+  font-size: 10px;
+  text-align: center;
 `
 
-export const SectionTitle = styled.h4`
-  color: ${cores.branca};
-  font-size: 16px;
-  font-weight: bold;
+export const FooterLogo = styled.img`
+  margin-top: 40px;
 `
 
 export const Links = styled.ul`
   display: flex;
-  margin-top: 16px;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 80px;
 `
 
-export const Link = styled.a`
-  color: ${cores.cinzaClaro};
-  text-decoration: none;
+export const Link = styled.img`
   margin-right: 8px;
 `
 
 export const FooterSection = styled.div`
-  margin-bottom: 64px;
+  display: flex;
+  justify-content: center;
+`
+
+export const Copyright = styled.p`
+  width: 480px;
+  margin-bottom: 40px;
 `
