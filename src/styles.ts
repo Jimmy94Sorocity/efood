@@ -4,7 +4,6 @@ export const cores = {
   salmao: '#E66767',
   beje: '#FFEBD9',
   branca: '#FFFFFF',
-  verde: '#10AC84',
   bejeClaro: '#FFF8F2'
 }
 
