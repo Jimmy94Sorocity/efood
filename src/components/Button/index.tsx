@@ -1,6 +1,6 @@
 import { ButtonContainer } from './styles'
 
-type Props = {
+export type Props = {
   to?: string
   children: string
 }

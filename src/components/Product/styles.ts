@@ -48,3 +48,5 @@ export const Avaliacao = styled.div`
     margin-left: 8px;
   }
 `
+
+export const Estrela = styled.img``

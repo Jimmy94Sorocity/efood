@@ -1,6 +1,6 @@
 class Lojas {
   name: string
-  avaliation: number
+  avaliation?: number
   description: string
   infos: string[]
   image: string
