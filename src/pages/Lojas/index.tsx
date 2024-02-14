@@ -1,10 +1,15 @@
-import ProductsList from '../../components/ProductsList'
+// import ProductsList from '../../components/ProductsList'
 import Lojas from '../../models/Lojas'
 
-import sushi from '../../assets/images/sushi.png'
-import massas from '../../assets/images/massa.png'
+import Header from '../../components/Header'
+import ProductsList from '../../components/ProductsList'
 
-const principal: Lojas[] = [
+import pizza from '../../assets/images/pizza.png'
+// import diablo from '../../assets/images/diablo.png'
+// import zelda from '../../assets/images/zelda.png'
+// import starWars from '../../assets/images/star_wars.png'
+
+const itens: Lojas[] = [
   {
     id: 1,
     description:
@@ -12,7 +17,7 @@ const principal: Lojas[] = [
     name: 'Hioki Sushi',
     avaliation: 4.9,
     infos: ['Destaque da semana', 'Japonesa'],
-    image: sushi
+    image: pizza
   },
   {
     id: 2,
@@ -21,7 +26,7 @@ const principal: Lojas[] = [
     name: 'La Dolce Vita Trattoria',
     avaliation: 4.6,
     infos: ['Italiana'],
-    image: massas
+    image: pizza
   },
   {
     id: 3,
@@ -30,7 +35,7 @@ const principal: Lojas[] = [
     name: 'La Dolce Vita Trattoria',
     avaliation: 4.6,
     infos: ['Italiana'],
-    image: massas
+    image: pizza
   },
   {
     id: 4,
@@ -39,7 +44,7 @@ const principal: Lojas[] = [
     name: 'La Dolce Vita Trattoria',
     avaliation: 4.6,
     infos: ['Italiana'],
-    image: massas
+    image: pizza
   },
   {
     id: 5,
@@ -48,7 +53,7 @@ const principal: Lojas[] = [
     name: 'La Dolce Vita Trattoria',
     avaliation: 4.6,
     infos: ['Italiana'],
-    image: massas
+    image: pizza
   },
   {
     id: 6,
@@ -57,14 +62,57 @@ const principal: Lojas[] = [
     name: 'La Dolce Vita Trattoria',
     avaliation: 4.6,
     infos: ['Italiana'],
-    image: massas
+    image: pizza
   }
 ]
 
-const Home = () => (
+// const emBreve: Games[] = [
+//   {
+//     id: 5,
+//     category: 'RPG',
+//     description:
+//       'Diablo IV é um RPG de ação em desenvolvimento pela Blizzard Entertainment.',
+//     title: 'Diablo 4',
+//     system: 'Windows',
+//     infos: ['17/05'],
+//     image: diablo
+//   },
+//   {
+//     id: 6,
+//     category: 'RPG',
+//     description:
+//       'Diablo IV é um RPG de ação em desenvolvimento pela Blizzard Entertainment.',
+//     title: 'Zelda',
+//     system: 'Windows',
+//     infos: ['17/05'],
+//     image: zelda
+//   },
+//   {
+//     id: 7,
+//     category: 'RPG',
+//     description:
+//       'Diablo IV é um RPG de ação em desenvolvimento pela Blizzard Entertainment.',
+//     title: 'Star Wars',
+//     system: 'Windows',
+//     infos: ['17/05'],
+//     image: starWars
+//   },
+//   {
+//     id: 8,
+//     category: 'RPG',
+//     description:
+//       'Diablo IV é um RPG de ação em desenvolvimento pela Blizzard Entertainment.',
+//     title: 'Resident Evil 4',
+//     system: 'Nintendo Switch',
+//     infos: ['17/05'],
+//     image: resident
+//   }
+// ]
+
+const Restaurante = () => (
   <>
-    <ProductsList lojas={principal} />
+    <ProductsList lojas={itens} />
   </>
 )
 
-export default Home
+export default Restaurante

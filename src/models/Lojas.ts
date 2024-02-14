@@ -1,7 +1,6 @@
-class Games {
-  title: string
-  category: string
-  system: string
+class Lojas {
+  name: string
+  avaliation: number
   description: string
   infos: string[]
   image: string
@@ -9,21 +8,19 @@ class Games {
 
   constructor(
     id: number,
-    title: string,
-    category: string,
-    system: string,
+    name: string,
+    avaliation: number,
     description: string,
     infos: string[],
     image: string
   ) {
     this.id = id
-    this.title = title
-    this.category = category
-    this.system = system
+    this.name = name
+    this.avaliation = avaliation
     this.description = description
     this.infos = infos
     this.image = image
   }
 }
 
-export default Games
+export default Lojas

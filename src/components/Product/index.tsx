@@ -1,34 +1,35 @@
+import { Link } from 'react-router-dom'
 import Tag from '../Tag'
-import { Card, Titulo, Descricao, Infos } from './styles'
+import Button from '../Button'
+import { Card, Titulo, Descricao, Infos, Perfil, Avaliacao } from './styles'
+
+import estrela from '../../assets/images/estrela.png'
 
 type Props = {
-  title: string
-  category: string
-  system: string
+  name: string
   description: string
+  avaliation: number
   infos: string[]
   image: string
 }
 
-const Product = ({
-  title,
-  category,
-  system,
-  description,
-  infos,
-  image
-}: Props) => (
+const Product = ({ name, avaliation, description, infos, image }: Props) => (
   <Card>
-    <img src={image} alt={title} />
+    <img src={image} alt={name} />
     <Infos>
       {infos.map((info) => (
         <Tag key={info}>{info}</Tag>
       ))}
     </Infos>
-    <Titulo>{title}</Titulo>
-    <Tag>{category}</Tag>
-    <Tag>{system}</Tag>
+    <Perfil>
+      <Titulo>{name}</Titulo>
+      <Avaliacao>
+        <Titulo>{avaliation}</Titulo>
+        <img src={estrela} alt="estrela" />
+      </Avaliacao>
+    </Perfil>
     <Descricao>{description}</Descricao>
+    <Button to="/loja">Saiba mais</Button>
   </Card>
 )
 
